@@ -1,0 +1,2 @@
+# Temporal dynamic config overrides. Empty means Temporal's defaults; the server
+# needs the file to exist. Keys: https://docs.temporal.io/references/dynamic-configuration

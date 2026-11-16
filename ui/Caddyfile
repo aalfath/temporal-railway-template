@@ -1,0 +1,18 @@
+{
+	admin off
+	auto_https off
+	persist_config off
+}
+
+:{$PORT:8080} {
+	# Health check for Railway: answered by the UI server, no login needed.
+	handle /healthz {
+		reverse_proxy 127.0.0.1:{$TEMPORAL_UI_PORT}
+	}
+	handle {
+		basic_auth {
+			{$UI_USERNAME} {$UI_PASSWORD_HASH}
+		}
+		reverse_proxy 127.0.0.1:{$TEMPORAL_UI_PORT}
+	}
+}
