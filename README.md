@@ -1,5 +1,7 @@
 # Temporal on Railway
 
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/new/template/temporal-1?utm_medium=integration&utm_source=button&utm_campaign=temporal)
+
 Railway template for [Temporal](https://temporal.io), the open-source durable execution platform: the Temporal server, its Web UI behind a password, and Railway Postgres. Every app service builds from this repo, so a merge to `main` here shows up as an "update available" notice in the projects of everyone who deployed the template. Each deployer chooses when to apply it.
 
 ## What it deploys
