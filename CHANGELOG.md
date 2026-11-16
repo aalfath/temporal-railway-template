@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased (2026-11-16)
+
+- README: Deploy on Railway button for the published template (temporal-1). No change to the deployed services.
+
 ## 1.32.2 (2026-11-16)
 
 First release of the template.
